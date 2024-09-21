@@ -1,7 +1,7 @@
 .cls-line{
     margin: 5% 5%;
     border: 1px solid black;
-    height: 500px;
+    
     width: 800px;
     padding: 20px;
     display: flex;
@@ -9,8 +9,8 @@
 
     .cls-departure,
     .cls-arrival{
-        position: absolute;
-        top: 31%;
+        // position: absolute;
+        // top: 31%;
         
         
         .cls-code{
@@ -43,7 +43,7 @@
         padding: 0;
         background-color: #ffffff;
         position: relative;
-        left: 185px;
+        // left: 185px;
         border: 4px dashed blue;
         // border-top-left-radius: 142px;
         // border-top-right-radius: 142px;
@@ -52,7 +52,7 @@
         border-top-right-radius: 217px 154px;
         
         border-bottom: none;
-        top: 76px;
+        
     }
 
     .cls-dash::after,
@@ -81,19 +81,22 @@
         img{
             width: 40px;
             height: 40px;
-            transform: rotate(-22deg);
+            transform: rotate(-38deg);
         }
 
-        transform: rotate(43deg) translateX(-169px) translateY(275px);
+        transform: rotate(60deg) translateX(-153px) translateY(99px);
+        position: absolute;
+        left: 223px;
+        top: 180px;
         animation: flight 4s linear 1s;
         
         @keyframes flight {
             from {
-                transform: rotate(43deg) translateX(-169px) translateY(275px);
+                transform: rotate(60deg) translateX(-153px) translateY(99px);
             }
                 
             to {
-                transform: rotate(170deg) translateX(-169px) translateY(275px);
+                transform: rotate(184deg) translateX(-155px) translateY(99px);
             }
         }
 
