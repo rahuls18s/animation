@@ -1,0 +1,147 @@
+.cls-line{
+    margin: 5% 5%;
+    border: 1px solid black;
+    height: 500px;
+    width: 800px;
+    padding: 20px;
+    display: flex;
+    position: relative;
+
+    .cls-departure,
+    .cls-arrival{
+        position: absolute;
+        top: 31%;
+        
+        
+        .cls-code{
+            font-size: 20px;
+            font-weight: 600;
+            color: #ff6706;
+            display: block;
+        }
+
+        .cls-name{
+            font-size: 18px;
+            font-weight: 200;
+            color: #ff6706;
+        }
+    }
+
+    .cls-departure{
+        left: 15%;
+    }
+
+    .cls-arrival{
+        left: 65%;
+    }
+
+
+   
+    .cls-dash{
+        width: 316px;
+        height: 111px;
+        padding: 0;
+        background-color: #ffffff;
+        position: relative;
+        left: 185px;
+        border: 4px dashed blue;
+        // border-top-left-radius: 142px;
+        // border-top-right-radius: 142px;
+
+        border-top-left-radius: 217px 154px;
+        border-top-right-radius: 217px 154px;
+        
+        border-bottom: none;
+        top: 76px;
+    }
+
+    .cls-dash::after,
+    .cls-dash::before{
+        content: "";
+        display: inline-block;
+        content: "";
+        background-color: #5900ff;
+        height: 10px;
+        width: 10px;
+        border-radius: 75px;
+        box-shadow: 0 0 0 4px #e4e5ea;  
+        position: absolute;
+        bottom: 0;
+    }
+
+    .cls-dash::after{
+        right: -9px;
+    }
+
+    .cls-dash::before{
+       left: -7px;
+    }
+
+    .cls-box{ 
+        img{
+            width: 40px;
+            height: 40px;
+            transform: rotate(-22deg);
+        }
+
+        transform: rotate(43deg) translateX(-169px) translateY(275px);
+        animation: flight 4s linear 1s;
+        
+        @keyframes flight {
+            from {
+                transform: rotate(43deg) translateX(-169px) translateY(275px);
+            }
+                
+            to {
+                transform: rotate(170deg) translateX(-169px) translateY(275px);
+            }
+        }
+
+        // transform: rotate(170deg) translateX(-169px) translateY(275px);
+
+        // transform: rotate(143deg) translateX(-201px) translateY(166px);
+        // transform: rotate(25deg) translateX(-200px) translateY(-19px);
+        // animation: flight 5s linear 3s;
+        
+        // @keyframes flight {
+        //     from {
+        //             transform: rotate(25deg) translateX(-200px) ;
+        //     }
+                
+        //     to {
+        //             transform : rotate(160deg) translateX(-200px);
+        //     }
+        // }
+
+        // @keyframes flight {
+        //     from {
+        //         transform: rotate(0deg) translateX(-200px);
+        //     }
+        
+        //     to {
+        //         transform: rotate(180deg) translateX(-200px);
+        //     }
+        // }
+
+
+    // @keyframes myfirst {
+
+    //     0% {
+    //         transform: translate(0px, 200px);
+    //     }
+    //     25%  {
+    //         transform: translate(100px, 100px); 
+    //     }
+    //     50%  { 
+    //         transform: translate(200px, 0px);
+    //     }
+    //     75%  {
+    //         transform: translate(300px, 100px);
+    //     }
+    //     100% {
+    //         transform: translate(400px, 200px);
+    //     }
+    // }
+    
+    }
+}

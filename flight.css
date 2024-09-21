@@ -1,0 +1,79 @@
+.cls-line {
+  margin: 5% 5%;
+  border: 1px solid black;
+  height: 500px;
+  width: 800px;
+  padding: 20px;
+  display: flex;
+  position: relative;
+}
+.cls-line .cls-departure,
+.cls-line .cls-arrival {
+  top: 31%;
+}
+.cls-line .cls-departure .cls-code,
+.cls-line .cls-arrival .cls-code {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ff6706;
+  display: block;
+}
+.cls-line .cls-departure .cls-name,
+.cls-line .cls-arrival .cls-name {
+  font-size: 18px;
+  font-weight: 200;
+  color: #ff6706;
+}
+.cls-line .cls-departure {
+  left: 15%;
+}
+.cls-line .cls-arrival {
+  left: 65%;
+}
+.cls-line .cls-dash {
+  width: 344px;
+  height: 111px;
+  padding: 0;
+  background-color: #ffffff;
+  position: relative;
+  border: 4px dashed blue;
+  border-top-left-radius: 280px 183px;
+  border-top-right-radius: 280px 183px;
+  border-bottom: none;
+}
+.cls-line .cls-dash::after,
+.cls-line .cls-dash::before {
+  content: "";
+  display: inline-block;
+  content: "";
+  background-color: #5900ff;
+  height: 10px;
+  width: 10px;
+  border-radius: 75px;
+  box-shadow: 0 0 0 4px #e4e5ea;
+  position: absolute;
+  bottom: 0;
+}
+.cls-line .cls-dash::after {
+  right: -9px;
+}
+.cls-line .cls-dash::before {
+  left: -7px;
+}
+.cls-line .cls-box {
+  transform: translateX(-194px) translateY(-19px) rotate(-54deg);
+  animation: flight 4s linear 1s;
+}
+.cls-line .cls-box img {
+  width: 40px;
+  height: 40px;
+  transform: rotate(86deg);
+}
+@keyframes flight {
+  from {
+    transform: translateX(-187px) translateY(-19px) rotate(-54deg);
+  }
+  to {
+    transform: translateX(-187px) translateY(-19px) rotate(54deg);
+  }
+}/*# sourceMappingURL=flight.css.map */

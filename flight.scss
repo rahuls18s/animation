@@ -1,0 +1,117 @@
+.cls-line{
+    margin: 5% 5%;
+    border: 1px solid black;
+    height: 500px;
+    width: 800px;
+    padding: 20px;
+    display: flex;
+    position: relative;
+
+    .cls-departure,
+    .cls-arrival{
+        // position: absolute;
+        top: 31%;
+        
+        .cls-code{
+            font-size: 20px;
+            font-weight: 600;
+            color: #ff6706;
+            display: block;
+        }
+
+        .cls-name{
+            font-size: 18px;
+            font-weight: 200;
+            color: #ff6706;
+        }
+    }
+
+    .cls-departure{
+        left: 15%;
+    }
+
+    .cls-arrival{
+        left: 65%;
+    }
+
+
+   
+    .cls-dash{
+        width: 344px;
+        height: 111px;
+        padding: 0;
+        background-color: #ffffff;
+        position: relative;
+        border: 4px dashed blue;
+        border-top-left-radius: 280px 183px;
+        border-top-right-radius: 280px 183px;
+        border-bottom: none;
+    }
+
+    .cls-dash::after,
+    .cls-dash::before{
+        content: "";
+        display: inline-block;
+        content: "";
+        background-color: #5900ff;
+        height: 10px;
+        width: 10px;
+        border-radius: 75px;
+        box-shadow: 0 0 0 4px #e4e5ea;  
+        position: absolute;
+        bottom: 0;
+    }
+
+    .cls-dash::after{
+        right: -9px;
+    }
+
+    .cls-dash::before{
+       left: -7px;
+    }
+
+    .cls-box{ 
+        img{
+            width: 40px;
+            height: 40px;
+            transform: rotate(86deg);
+        }
+
+        transform: translateX(-194px) translateY(-19px) rotate(-54deg);
+        animation: flight 4s linear 1s;
+
+        @keyframes flight {
+            from{
+                transform: translateX(-187px) translateY(-19px) rotate(-54deg);
+            }
+
+            to{
+                transform: translateX(-187px) translateY(-19px) rotate(54deg);
+            }
+        }
+        
+        // @keyframes flight {
+         
+        //     0%{
+        //         transform: rotate(-14deg) translateX(-296px) translateY(7px);
+        //     }
+
+        //     25%{
+        //         transform: rotate(3deg) translateX(-296px) translateY(23px);
+        //     }
+
+        //     50%{
+        //         transform: rotate(43deg) translateX(-306px) translateY(180px);
+        //     }
+
+        //     75%{
+        //         transform: rotate(94deg) translateX(-219px) translateY(331px);
+        //     }
+
+        //     100%{
+        //         transform: rotate(123deg) translateX(-115px) translateY(331px);
+        //     }
+        // }
+
+    }
+}
